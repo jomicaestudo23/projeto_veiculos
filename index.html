@@ -4,11 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <link rel="stylesheet" href="css/style_veiculo.css">
-    <script src="js/script_veiculo.js" defer></script>
 </head>
 <body>
+    <div id="geral">
+        <h3>PROJETO VEÍCULO</h3>
+
+        <form id="form-props">
+            <label for="modelo">Modelo</label>
+            <input type="text" name="modelo" id="modelo">
+
+            <label for="marca">Marca</label>
+            <input type="text" name="marca" id="marca">
+
+            <label for="placa">Placa</label>
+            <input type="text" name="placa" id="placa">
+
+            <label for="ano">Ano de fabricação</label>
+            <input type="number" name="ano " id="ano">
+
+            <label for="valor">Valor do veículo</label>
+            <input type="number" name="valor " id="valor">
+
+            <h3>Tipo de combustível</h3>
+
+            <h4>Selecione alguma das opções</h4>
+            
+            <label>
+            <input type="radio" name="combustivel" id="gasolina" required>Gasolina
+            </label>
+        
+            <label>
+            <input type="radio" name="combustivel" id="etanol" required>Etanol
+            </label>
+        
+            <label>
+            <input type="radio" name="combustivel" id="bicombustivel" required>Bicombustível
+            </label>
+        
+            <label>
+            <input type="radio" name="combustivel" id="hibrido" required>Híbrido
+            </label>
+        
+            <label>
+            <input type="radio" name="combustivel" id="eletrico" required>Elétrico
+            </label>
+        
+            <button type="submit" id="btn-add"> Cadastrar </button>
+            <button type="reset" id="btn-limpar"> Limpar </button>
+        
+
+        </form>
+
+ 
+        <div id="div-lista-veiculo"></div>
+
+    </div>
     
 </body>
 </html>
